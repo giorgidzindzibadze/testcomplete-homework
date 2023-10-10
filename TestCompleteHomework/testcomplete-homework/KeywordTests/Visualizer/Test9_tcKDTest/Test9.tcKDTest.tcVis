@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Root signature="{42D2222C-ACA2-405F-8E67-05D5C42EB839}" version="2">
-	<data key="{D1138156-61F4-4564-B729-7959E0D3E4AB}">
-		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="0" kind="0" dateTime="45208.8034027778" objectName="Aliases.Orders.MainForm.ToolBar" objectLeft="8" objectTop="51" objectRight="600" objectBottom="79" clickPointX="73" clickPointY="59" imageFileName="tcvi1599704921273680.png" storageFileName="" needUpdate="False" rectColor="255" />
-		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="1" kind="0" dateTime="45208.8035763889" objectName="Aliases.Orders.dlgSaveAs.DUIViewWndClassName.Explorer_Pane.FloatNotifySink.ComboBox" objectLeft="136" objectTop="369" objectRight="650" objectBottom="386" clickPointX="-658" clickPointY="-215" imageFileName="tcvi1599720812273684.png" storageFileName="" needUpdate="False" rectColor="255" />
-		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="2" kind="0" dateTime="45208.803599537" objectName="Aliases.Orders.dlgSaveAs.btnSave" objectLeft="470" objectTop="434" objectRight="558" objectBottom="460" clickPointX="503" clickPointY="445" imageFileName="tcvi1599722265273686.png" storageFileName="" needUpdate="False" rectColor="255" />
-	</data>
-</Root>
