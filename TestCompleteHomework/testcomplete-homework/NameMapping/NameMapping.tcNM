@@ -73,6 +73,63 @@
 													</Property>
 												</Properties>
 											</Child>
+											<Child Name="Quantity" Key="{21E93473-8DEA-4CC9-A54D-C048C4262E08}">
+												<Image FileName="-1938116513" Left="75" Top="82" Right="131" Bottom="102" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="Quantity" />
+													</Property>
+												</Properties>
+												<Children>
+													<Child Name="UpDownEdit" Key="{BE3288BD-5996-44BE-9488-13B5B0F85F18}">
+														<Image FileName="-1938116513" Left="77" Top="84" Right="113" Bottom="100" />
+														<TypeInfo Item0="{5A310D0A-E998-4265-AB5E-10033E2EBC05}" />
+														<Properties>
+															<Property Name="ClrFullClassName">
+																<Value Value="System.Windows.Forms.UpDownBase+UpDownEdit" />
+															</Property>
+														</Properties>
+													</Child>
+												</Children>
+											</Child>
+											<Child Name="Price" Key="{7BE63B16-C93F-4945-8279-72E6FB5975AD}">
+												<Image FileName="-1096231489" Left="235" Top="82" Right="315" Bottom="102" />
+												<TypeInfo Item0="{4C013ACE-4DB7-40B8-BAC4-D700C2F99287}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="Price" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="Discount" Key="{76281905-E14F-4E95-A40C-F39E5331A819}">
+												<Image FileName="-1096955542" Left="387" Top="82" Right="467" Bottom="102" />
+												<TypeInfo Item0="{4C013ACE-4DB7-40B8-BAC4-D700C2F99287}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="Discount" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="groupBox1" Key="{846F1E15-F9B4-4706-A2A2-3A50389AEE69}">
+												<Image FileName="1456703986" Left="323" Top="106" Right="467" Bottom="154" />
+												<TypeInfo Item0="{E206164A-324C-4851-8BA6-CEFE8925087B}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="groupBox1" />
+													</Property>
+												</Properties>
+												<Children>
+													<Child Name="Total" Key="{A715A0E0-C744-4C64-932E-90FA9A1D9031}">
+														<Image FileName="1456703986" Left="387" Top="122" Right="459" Bottom="142" />
+														<TypeInfo Item0="{4C013ACE-4DB7-40B8-BAC4-D700C2F99287}" />
+														<Properties>
+															<Property Name="WinFormsControlName">
+																<Value Value="Total" />
+															</Property>
+														</Properties>
+													</Child>
+												</Children>
+											</Child>
 										</Children>
 									</Child>
 									<Child Name="ButtonOK" Key="{472B8DCA-B7C5-4354-A6E8-37A6E7A385B0}">
@@ -216,6 +273,15 @@
 									</Child>
 								</Children>
 							</Child>
+							<Child Name="ComboLBox" Key="{00DA51F0-EAB6-4DFE-BD0E-B024B6445984}">
+								<Image FileName="175487449" Left="0" Top="0" Right="392" Bottom="41" />
+								<TypeInfo Item0="{955B5B18-0CB3-43B6-BE25-5A6ED90D6116}" />
+								<Properties>
+									<Property Name="WndClass">
+										<Value Value="ComboLBox" />
+									</Property>
+								</Properties>
+							</Child>
 						</Children>
 					</Child>
 					<Child Name="explorer" Key="{2591319F-5899-40BE-ACBA-16E78A2B0FEB}">
@@ -315,6 +381,14 @@
 			<Child Name="OrderForm" Owner="{61C35F45-F9BA-494C-A6C6-F3A43DD94339}">
 				<Child Name="Group" Owner="{1B53D54F-4266-4EB2-A583-D9A2AE564B94}">
 					<Child Name="Customer" Owner="{2EE202B4-8A85-4D42-B6A3-159FBA93AB78}" />
+					<Child Name="Quantity" Owner="{21E93473-8DEA-4CC9-A54D-C048C4262E08}">
+						<Child Name="UpDownEdit" Owner="{BE3288BD-5996-44BE-9488-13B5B0F85F18}" />
+					</Child>
+					<Child Name="Price" Owner="{7BE63B16-C93F-4945-8279-72E6FB5975AD}" />
+					<Child Name="Discount" Owner="{76281905-E14F-4E95-A40C-F39E5331A819}" />
+					<Child Name="groupBox1" Owner="{846F1E15-F9B4-4706-A2A2-3A50389AEE69}">
+						<Child Name="Total" Owner="{A715A0E0-C744-4C64-932E-90FA9A1D9031}" />
+					</Child>
 				</Child>
 				<Child Name="ButtonOK" Owner="{472B8DCA-B7C5-4354-A6E8-37A6E7A385B0}" />
 			</Child>
@@ -333,6 +407,7 @@
 				</Child>
 				<Child Name="btnSave" Owner="{BFF2313D-35B8-4286-A59F-5DEA96B38035}" />
 			</Child>
+			<Child Name="ComboLBox" Owner="{00DA51F0-EAB6-4DFE-BD0E-B024B6445984}" />
 		</Child>
 		<Child Name="explorer" Owner="{2591319F-5899-40BE-ACBA-16E78A2B0FEB}">
 			<Child Name="wndTaskListThumbnailWnd" Owner="{5ECF6124-90E9-4BFE-BFCB-4459467CADEB}" />

@@ -1,13 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
 	<children>
-		<folder name="main">
-			<child name="Unit2" key="{19125C42-758B-46EA-9844-1922C47546E9}" path="Unit2.js" />
-			<child name="Task4" key="{C02D117D-AFDD-4BE5-9D23-187551E0B453}" path="Task4.js" />
+		<folder name="Main">
+			<folder name="Common">
+				<child name="ForAll" key="{4F80D6B8-E522-4504-BBD0-BFBEADCABDA0}" path="ForAll.js" />
+			</folder>
+			<folder name="Data">
+				<child name="Dates" key="{B987DB25-43C3-4136-A738-D6B7DA4682D4}" path="Dates.js" />
+			</folder>
+			<folder name="Models" />
+			<folder name="Windows/Pages">
+				<child name="MainClass" key="{3734D0D3-7EC7-45C6-BABA-20E55C986E80}" path="MainClass.js" />
+			</folder>
 		</folder>
 		<folder name="test">
-			<child name="firstrun" key="{96F48804-A0A9-4FE8-9251-EBF2928F96CE}" path="firstrun.js" />
-			<child name="secondrun" key="{1AEBF2DB-8946-4F9F-946B-240525841057}" path="secondrun.js" />
+			<folder name="Test cases">
+				<child name="OrderTest" key="{2505EECB-B3B8-429B-A9D9-17546F19604D}" path="OrderTest.js" />
+			</folder>
+			<folder name="Test runners">
+				<child name="OrderRun" key="{E5C30515-8109-4A33-BB74-79253DEB5FF2}" path="OrderRun.js" />
+			</folder>
+			<child name="secondTask" key="{3F28F17D-2C32-498B-A480-BEF600A0BEB1}" path="secondTask.js" />
 		</folder>
 		<child name="Unit1" key="{3C33E910-4E09-4EF3-AF68-73B70F23C60D}" path="Unit1.js" />
 	</children>
