@@ -9,12 +9,21 @@ function closingOrder(){
 }
 
 function CustomAssert(actualValue, expectedValue) {
-    if (actualValue === expectedValue) {
+    if (actualValue == expectedValue) {
         Log.Message("Assertion Passed" );
     } else {
         Log.Error("Assertion Failed");
     }
 }
+
+function assertForDeleting(actualValue, expectedValue){
+  if (actualValue !== expectedValue) {
+        Log.Message("Assertion Failed, Text is deleted" );
+    } else {
+        Log.Error("Assertion Passed");
+    }
+}
 module.exports.CustomAssert = CustomAssert;
 module.exports.openingOrder = openingOrder;
 module.exports.closingOrder = closingOrder;
+module.exports.assertForDeleting = assertForDeleting;

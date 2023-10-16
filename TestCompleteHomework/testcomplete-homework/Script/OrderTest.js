@@ -1,46 +1,63 @@
-﻿var ForAll = require("ForAll");
+﻿var Step2 = require("Step2");
+var ForAll = require("ForAll");
 var MainClass = require("MainClass");
 let mainClass = MainClass.orderClass;
 
-function addingOrders(){
-  mainClass.AddingOrder();
-  mainClass.AddWithButton();
+function checkAdding(){
+  mainClass.checkAdding();
 }
 
-function validateaAddedOrders(){
-  mainClass.addingValidation();
+function checkDeleting(){
+   mainClass.checkDeleting();
+}
+
+function streetValidation(){
+  mainClass.streetValidation();
+}
+
+function writeAddress(){
+   mainClass.writeAddress();
+}
+
+function writeCity(){
+  mainClass.writeCity();
+}
+
+function writeZipCode(){
+  mainClass.writeZipCode();
+}
+
+function writeStreetLocation(){
+  mainClass.writeStreetLocation();
 }
 
 
-function validateNumbersOfProduct(){
-  ForAll.openingOrder();
-  mainClass.numberOfProducts();
-  ForAll.closingOrder();
-}
-
-function numberValidation(){
-  mainClass.numberValidation();
-}
-
-function validateFields(){
-  mainClass.addNewValues();
-  mainClass.validateFields();
-}
-
-function validateDate(){
-  mainClass.checkDate();
-}
 
 function run(){
   ForAll.openingOrder();
-  mainClass.AddingOrder();
-  mainClass.AddWithButton();
-  mainClass.addingValidation();
-  mainClass.numberOfProducts();
-//  mainClass.numberValidation();
-  mainClass.addNewValues();
-  mainClass.validateFields();
- // mainClass.checkDate();// dakomentarebuli linebi aerorebs 
+  mainClass.checkAdding();
+  mainClass.checkDeleting();
+  mainClass.streetValidation();
+  mainClass.writeAddress();
+  mainClass.writeCity();
+  mainClass.writeZipCode();
+  mainClass.writeStreetLocation();
   ForAll.closingOrder();
 }
 module.exports.run = run;
+
+
+function concat(){
+  var concNum = Step2.concatDigitSums(156,967);
+  Log.Message(concNum)
+}
+
+function dateFormat(){
+  Step2.TodaySpecificPattern();
+}
+
+function step2Run(){
+  concat();
+  dateFormat();
+}
+module.exports.step2Run = step2Run;

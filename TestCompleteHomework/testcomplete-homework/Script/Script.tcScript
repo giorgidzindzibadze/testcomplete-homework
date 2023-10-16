@@ -4,6 +4,8 @@
 		<folder name="Main">
 			<folder name="Common">
 				<child name="ForAll" key="{4F80D6B8-E522-4504-BBD0-BFBEADCABDA0}" path="ForAll.js" />
+				<child name="Addresses" key="{D4CF037C-8EFF-4CF8-884B-03C5BB466D87}" path="Addresses.js" />
+				<child name="Step2" key="{8B2D6B98-8B0D-44EC-A56F-343D959E4B41}" path="Step2.js" />
 			</folder>
 			<folder name="Data">
 				<child name="Dates" key="{B987DB25-43C3-4136-A738-D6B7DA4682D4}" path="Dates.js" />
@@ -20,7 +22,6 @@
 			<folder name="Test runners">
 				<child name="OrderRun" key="{E5C30515-8109-4A33-BB74-79253DEB5FF2}" path="OrderRun.js" />
 			</folder>
-			<child name="secondTask" key="{3F28F17D-2C32-498B-A480-BEF600A0BEB1}" path="secondTask.js" />
 		</folder>
 		<child name="Unit1" key="{3C33E910-4E09-4EF3-AF68-73B70F23C60D}" path="Unit1.js" />
 	</children>
