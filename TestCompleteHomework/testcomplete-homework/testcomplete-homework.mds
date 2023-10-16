@@ -10,7 +10,18 @@
 	<testItems key="{2924DC66-513C-43B5-95FB-00ADF4ABFC52}" version="14">
 		<children />
 	</testItems>
-	<variables key="{D2F43584-08CE-4E79-8A12-9DFDCC869F3E}" />
+	<variables key="{D2F43584-08CE-4E79-8A12-9DFDCC869F3E}">
+		<data Version="4">
+			<Items>
+				<Variable Name="Var1" Type="String" Local="False">
+					<DefValue StrValue=".??B64??.:bGV0J3MgYWRkIG9yZGVy" />
+				</Variable>
+				<Variable Name="Var2" Type="String" Local="False">
+					<DefValue StrValue=".??B64??.:b3JkZXJpbmc=" />
+				</Variable>
+			</Items>
+		</data>
+	</variables>
 	<settings key="{B674EE25-13DA-422C-AA4C-F192DE11737A}">
 		<settingsVersion value="15.56" />
 		<setting name="AgOpenApp_ExtendedSilverlightObjectTree" type="1" value="False" />
