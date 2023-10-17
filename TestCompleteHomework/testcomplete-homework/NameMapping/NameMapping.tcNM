@@ -130,6 +130,15 @@
 													</Child>
 												</Children>
 											</Child>
+											<Child Name="label8" Key="{DA6E7092-7FAC-47FC-B9D3-A4FA3C222314}">
+												<Image FileName="-463757476" Left="19" Top="228" Right="58" Bottom="245" />
+												<TypeInfo Item0="{EA1150A5-3F0B-4BF3-B1F3-D13AD1059C0C}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="label8" />
+													</Property>
+												</Properties>
+											</Child>
 										</Children>
 									</Child>
 									<Child Name="ButtonOK" Key="{472B8DCA-B7C5-4354-A6E8-37A6E7A385B0}">
@@ -389,6 +398,7 @@
 					<Child Name="groupBox1" Owner="{846F1E15-F9B4-4706-A2A2-3A50389AEE69}">
 						<Child Name="Total" Owner="{A715A0E0-C744-4C64-932E-90FA9A1D9031}" />
 					</Child>
+					<Child Name="label8" Owner="{DA6E7092-7FAC-47FC-B9D3-A4FA3C222314}" />
 				</Child>
 				<Child Name="ButtonOK" Owner="{472B8DCA-B7C5-4354-A6E8-37A6E7A385B0}" />
 			</Child>
