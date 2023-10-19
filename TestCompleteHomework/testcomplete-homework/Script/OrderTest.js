@@ -1,63 +1,67 @@
-﻿var Step2 = require("Step2");
+﻿var GetRequest = require("GetRequest");
+var Dates = require("Dates");
+//var Step2 = require("Step2");
 var ForAll = require("ForAll");
 var MainClass = require("MainClass");
 let mainClass = MainClass.orderClass;
 
-function checkAdding(){
-  mainClass.checkAdding();
+
+function radioButtunValidation(){
+  mainClass.radioButtunValidation();
 }
 
-function checkDeleting(){
-   mainClass.checkDeleting();
+function addRandomCardNumber(){
+  mainClass.addRandomCardNumber();
 }
 
-function streetValidation(){
-  mainClass.streetValidation();
+function getCopyNumber(){
+  mainClass.getCopyNumber();
 }
 
-function writeAddress(){
-   mainClass.writeAddress();
+function addOrder(){
+  mainClass.addOrder();
 }
 
-function writeCity(){
-  mainClass.writeCity();
+function addOrdeForRedacting(){
+  mainClass.addOrdeForRedacting();
 }
 
-function writeZipCode(){
-  mainClass.writeZipCode();
+function changeOrder(){
+  mainClass.changeOrder();
 }
 
-function writeStreetLocation(){
-  mainClass.writeStreetLocation();
+function validateRedacting(){
+  mainClass.validateRedacting();
 }
-
 
 
 function run(){
   ForAll.openingOrder();
-  mainClass.checkAdding();
-  mainClass.checkDeleting();
-  mainClass.streetValidation();
-  mainClass.writeAddress();
-  mainClass.writeCity();
-  mainClass.writeZipCode();
-  mainClass.writeStreetLocation();
+  mainClass.radioButtunValidation();
+  mainClass.addRandomCardNumber();
+  mainClass.getCopyNumber();
+  mainClass.addOrder();
+  mainClass.addOrdeForRedacting();
+  mainClass.changeOrder();
+  mainClass.validateRedacting();
   ForAll.closingOrder();
 }
 module.exports.run = run;
 
 
-function concat(){
-  var concNum = Step2.concatDigitSums(156,967);
-  Log.Message(concNum)
+function addKeyFromApi(){
+  mainClass.addKeyFromApi();
 }
 
-function dateFormat(){
-  Step2.TodaySpecificPattern();
+function addCustNameFromApi(){
+  mainClass.addCustNameFromApi();
 }
 
-function step2Run(){
-  concat();
-  dateFormat();
+function apiRun(){
+  ForAll.openingOrder();
+  addKeyFromApi();
+  addCustNameFromApi();
+  ForAll.closingOrder();
 }
-module.exports.step2Run = step2Run;
+
+module.exports.apiRun = apiRun;
