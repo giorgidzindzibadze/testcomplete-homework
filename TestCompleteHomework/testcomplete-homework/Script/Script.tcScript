@@ -5,7 +5,8 @@
 			<folder name="Common">
 				<child name="ForAll" key="{4F80D6B8-E522-4504-BBD0-BFBEADCABDA0}" path="ForAll.js" />
 				<child name="Addresses" key="{D4CF037C-8EFF-4CF8-884B-03C5BB466D87}" path="Addresses.js" />
-				<child name="Step2" key="{8B2D6B98-8B0D-44EC-A56F-343D959E4B41}" path="Step2.js" />
+				<child name="RandomFunction" key="{851CE032-0D63-4250-99FE-ABDFB3B902F6}" path="RandomFunction.js" />
+				<child name="GetRequest" key="{CAB9565E-3F9A-4388-B8C8-0977B0031B88}" path="GetRequest.js" />
 			</folder>
 			<folder name="Data">
 				<child name="Dates" key="{B987DB25-43C3-4136-A738-D6B7DA4682D4}" path="Dates.js" />

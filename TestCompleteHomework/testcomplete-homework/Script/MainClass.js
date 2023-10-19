@@ -1,4 +1,6 @@
-﻿var ForAll = require("ForAll");
+﻿var GetRequest = require("GetRequest");
+var RandomFunction = require("RandomFunction");
+var ForAll = require("ForAll");
 var Dates = require("Dates");
 var Addresses = require("Addresses");
 
@@ -22,56 +24,71 @@ class OrderClass{
     this.okBtn = this.mainOrderForm.ButtonOK;
   }
   
-  checkAdding(){
+  radioButtunValidation(){
+    this.mainMenu.Click("Orders|New order...");
+    var radio = this.group.FindAllChildren("ClrClassName", "RadioButton");
+    ForAll.CustomAssert(radio.length, Dates.expectedItemCount);
+    this.mainOrderForm.WinFormsObject("ButtonCancel").ClickButton();
+  }
+  
+  addRandomCardNumber(){
+    this.mainMenu.Click("Orders|New order...");
+    var cardField =this.group.WinFormsObject("CardNo");
+    var randomCardNumber = RandomFunction.generateRandomCardNumber();
+    cardField.Keys(randomCardNumber);    
+  }
+  
+  getCopyNumber(){
+    var cardField =this.group.WinFormsObject("CardNo");
+    cardField.Keys("^a^c");    
+    Log.Checkpoint( Sys.Clipboard);
+  }
+  
+  addOrder(){
+    this.okBtn.ClickButton();
+  }
+  
+  addOrdeForRedacting(){
     this.mainMenu.Click("Orders|New order...");
     this.custName.Keys(Project.Variables.Var1);
-    ForAll.CustomAssert(this.custName.wText,Project.Variables.Var1)
-    this.okBtn.ClickButton();
-  }
-  
-  checkDeleting(){
-    this.ordersView.DblClickItem(Project.Variables.Var1, 0);
-    this.custName.Keys("[BS]"); 
-    ForAll.assertForDeleting(this.custName.wText, Project.Variables.Var1);
-    this.okBtn.ClickButton();
-
-  }
-  
-  streetValidation(){
-    this.mainMenu.Click("Orders|New order...");
-    ForAll.CustomAssert(this.streetName.Text,Dates.street);
-  }
-  
-  writeAddress(){
-    var streetField =  Aliases.Orders.OrderForm.Group.WinFormsObject("Street");//zemodan ar moaqvs, aerorebs
-    streetField.Keys(Dates.address);
-    this.okBtn.ClickButton();
-
-  }
-  
-  writeCity(){
-    this.mainMenu.Click("Orders|New order...");
-    var city = Aliases.Orders.OrderForm.Group.WinFormsObject("City");// arc es moaqvs zemodan
-    city.Keys(Addresses.city);
-  }
-  
-  writeZipCode(){
     var zipcode =Aliases.Orders.OrderForm.Group.WinFormsObject("Zip");
     zipcode.Keys(Addresses.zipCode);
-  }
-  
-  writeStreetLocation(){
-    var streetField =  Aliases.Orders.OrderForm.Group.WinFormsObject("Street");
-    streetField.Keys(Addresses.street);
-    this.custName.Keys(Project.Variables.Var1);// davamate usaxelod rom ar darcheniliyo
     this.okBtn.ClickButton();
     
   }
+  
+  changeOrder(){
+    this.ordersView.DblClickItem(Project.Variables.Var1, 0);
+    this.group.WinFormsObject("Zip").Keys("[BS]"); 
+    this.okBtn.ClickButton();
+
+  }
+  
+  validateRedacting(){
+    this.ordersView.DblClickItem(Project.Variables.Var1, 0);
+    ForAll.assertForRedacting(Addresses.zipCode,this.group.WinFormsObject("Zip").Text);
+    this.okBtn.ClickButton();
+
+  }
+  
+  addKeyFromApi(){
+   var json = GetRequest.getRequest(Dates.baseUrl);
+   this.mainMenu.Click("Orders|New order...");
+   var zipcode =Aliases.Orders.OrderForm.Group.WinFormsObject("Zip");
+   zipcode.Keys(json.key)
+   this.okBtn.ClickButton();
+  }
+  
+  addCustNameFromApi(){
+    var json = GetRequest.getRequest(Dates.typeUrl);
+    this.mainMenu.Click("Orders|New order...");
+    this.custName.Keys(json.activity)
+    this.okBtn.ClickButton();
+  }
+  
 }
 
 var orderClass = new OrderClass();
 
 module.exports.orderClass = orderClass;
-
-
 

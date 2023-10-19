@@ -23,7 +23,16 @@ function assertForDeleting(actualValue, expectedValue){
         Log.Error("Assertion Passed");
     }
 }
+
+function assertForRedacting(actualValue, expectedValue){
+  if (actualValue !== expectedValue) {
+        Log.Message("Assertion Passed, Redaction is successfull" );
+    } else {
+        Log.Error("Assertion Passed");
+    }
+}
 module.exports.CustomAssert = CustomAssert;
 module.exports.openingOrder = openingOrder;
 module.exports.closingOrder = closingOrder;
 module.exports.assertForDeleting = assertForDeleting;
+module.exports.assertForRedacting = assertForRedacting;
